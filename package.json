@@ -1,0 +1,38 @@
+{
+  "name": "polyfill-inject-plugin",
+  "version": "0.0.1",
+  "description": "按需注入polyfill",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": {
+    "name": "weilinerl",
+    "email": "2207284210@qq.com",
+    "url": "http://me.crecode.cn/"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WeilinerL/polyfill-inject-plugin.git"
+  },
+  "devDependencies": {
+    "release-it": "^17.10.0"
+  },
+  "peerDependencies": {
+    "terser": ">=4.0.0"
+  },
+  "release-it": {
+    "git": {
+      "requireCleanWorkingDir": false,
+      "commitMessage": "chore: release v${version}"
+    },
+    "npm": {
+      "publish": true
+    }
+  },
+  "dependencies": {
+    "intersection-observer": "^0.12.2",
+    "smoothscroll-polyfill": "^0.4.4"
+  }
+}
